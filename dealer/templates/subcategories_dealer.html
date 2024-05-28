@@ -1,0 +1,52 @@
+{% include 'menudealer.html' %}
+<head>
+<style>
+        .card {
+            height: 120px;
+            width: 200px;
+            margin-bottom: 50px;
+            margin-right: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+                margin-left: 60px;
+                margin-bottom: 20px;
+            }
+
+            .card:nth-child(odd) {
+                clear: both; 
+            }
+        }
+    </style>
+ </head>   
+<body style="background-color: LightGray;">
+
+    {% include 'dealerheader.html' %}
+
+    <br><br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {% for crop in crops %}
+            <a href="/dealer/productlist/{{crop.nameineng}}/">
+             <div class="card rounded" style="height: 222px; width: 200px; margin-right: 10px; ">
+                <h3 style="margin-left: 50px; margin-top: 15px;">{{crop.nameineng}}</h3>
+                <h4 style="margin-left: 50px; margin-top: 5px;">{{crop.nameinhindi}}  {{crop.nameinurdu}}</h4>
+                <div class="image-container">
+                    <img src="/media/{{crop.image}}" height="125px" alt="Carrot Image">
+                </div>
+                <div class="container">
+                    <p>{{farmer}} farmer added {{crop.nameineng}}</p>
+                </div>
+             </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div> <br><br>
+
+    {% include 'footer.html' %}

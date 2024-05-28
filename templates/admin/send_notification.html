@@ -1,0 +1,10 @@
+{% extends 'admin/base_site.html' %}
+
+{% block content %}
+<h2>Send Push Notification</h2>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="_selected_action" value="{{ devices.ids|join:"," }}">
+    <button type="submit" name="apply">Send</button>
+</form>
+{% endblock %}

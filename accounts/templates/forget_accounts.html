@@ -1,0 +1,166 @@
+{% load static%}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang=""> 
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-KISAN | Forget</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="apple-touch-icon" href="{% static 'apple-icon.png' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/cs-skin-elastic.css' %}">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="{% static 'assets/scss/style.css' %}">
+    <link href="{% static 'assets/css/lib/vector-map/jqvmap.min.css' %}" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>  
+<script>  
+    $(document).ready(function(){  
+        $("#forgetform").validate({
+            rules: {
+                email: {
+                    required: true
+                }
+            },
+            messages: {
+                email: {
+                    required: "specify email"
+                },
+            }  
+        });
+    }); 
+</script> 
+    <style>
+        input::placeholder {
+       color: white; 
+        }
+
+            
+     @media screen and (max-width: 768px) {
+    .backgroundimg {
+        width: 375px;
+        height: 675px;  
+        background-size: contain; 
+        background-position: center;  
+        background-image:url('../static/images/farm3.jpg');
+        background-size: cover; 
+        margin: 0;
+    }
+    .blacklayer{
+        width: 375px;
+        height: 677px;
+        background-color: rgba(0, 0, 0, 0.5); 
+        margin-top: -10px;    
+    }
+    .ekisan{
+        font-size: large;
+    }
+    .back{
+        margin-left: 270px;
+        margin-top:20px;
+    }
+    .login{
+        width: 350px;
+        height: 200px;
+        margin-top: 250px;
+        box-shadow: 0 0 50px #46eb96d7;
+    }
+    p,label{
+        font-size: 12px;
+    }
+    .copyright{
+        margin-top: 300px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .backgroundimg{
+        height: 603px; /* Adjust height to fit content */
+        background-size: contain; /* Ensure the entire image fits within the container */
+        background-position: center; /* Center the image */
+        background-image:url('../static/images/farm3.jpg');
+        background-size: cover; 
+        margin: 0;
+    }
+    .blacklayer{
+        height: 603px;
+        background-color: rgba(0, 0, 0, 0.5); 
+        margin-top: -10px;
+    }
+    .back{
+        margin-left: 1000px;
+        margin-top:20px;
+    }
+    .login{
+        margin-top: 10px; 
+        width: 500px;
+        margin-left: 375px;
+       
+    }
+    p,label{
+        font-size: 15px;
+    }
+    .copyright{
+        margin-top: 105px;
+        margin-left: -300px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="backgroundimg">    
+    <div class="blacklayer">
+        <h3 class="ekisan text-white" style="position: fixed; margin-left: 30px;padding-top: 30px;">E-KISAN</h3>
+        <a href="/"><button class="back btn btn-outline-light btn-sm" style="box-shadow: 0 0 50px #46eb96d7;">Back</button></a>
+  <div class="sufee-login d-flex align-content-center flex-wrap" >
+      <div class="container">
+          <div class="login-content">
+
+              <div class="bg-transparent card login-form" style="border-color: white;box-shadow: 0 0 50px #46eb96d7;">
+                  <form action="/forget/" method="POST" id="indexform">
+                    {% csrf_token %}
+                      <div class="form-group">
+                          <label class="text-white">Email</label>
+                          <input type="email" name="email" id="email" class="form-control bg-transparent text-white"  />
+                      </div>
+                        <button type="submit" name="forget" id="forget" class="btn btn-success btn-flat m-b-30 m-t-30"> Get Password</button>
+                  </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright text-white">E-KISAN - @copyright-2022</p>
+</div>
+</div>
+    <script src="{% static 'assets/js/vendor/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+
+</body>
+</html>

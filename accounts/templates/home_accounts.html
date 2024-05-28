@@ -1,0 +1,802 @@
+<!--  {% load static %}
+<!doctype html>
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-KISAN</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="apple-touch-icon" href="{% static 'apple-icon.png' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/cs-skin-elastic.css' %}">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.less"> 
+    <link rel="stylesheet" href="{% static 'assets/scss/style.css' %}">
+    <link href="{% static 'assets/css/lib/vector-map/jqvmap.min.css' %}" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> 
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .slider-container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+        width: 300px;
+        margin: 0 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        
+    }
+
+    .card img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .slider-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .slider-controls button {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .card {
+            border-color: white;
+            box-shadow: 0 0 50px #46eb96d7;
+        }
+    
+     @media screen and (max-width: 768px) {
+    .backgroundimg {
+        width: 375px;
+        height: 670px; 
+        background-size: contain; 
+        background-position: center; 
+        background-image: url('../static/images/farm3.jpg');  
+        backdrop-filter: blur(100px); 
+        overflow-y: hidden; 
+        background-size: cover; 
+    
+        margin: 0;
+    }
+   .ekisan{
+        font-size: large;
+    }
+    .sell {
+        margin-left: 125px;
+        margin-top: 30px;
+        box-shadow: 0 0 50px #46eb96d7;
+        width: 75px;
+        font-size: 12px;
+    }
+    .signup {
+        margin-left: 274px;
+        margin-top: 30px;
+        box-shadow: 0 0 50px #46eb96d7;
+        width: 85px;
+        font-size: 12px;
+    }
+    .signin{
+        margin-left: 200px;
+        margin-top: 30px;
+        box-shadow: 0 0 50px #46eb96d7;
+        width: 75px;
+        font-size: 12px;
+    }
+    table{
+        width: 150px;
+    }
+    .farmers{
+        width: 165px;
+        height: 100px;
+    }
+    .dealers{
+        width: 165px;
+        margin-left: 6px;
+    }
+    .deals{
+        width: 350px;
+        margin-top: 10px;
+    }
+    .msg{
+        font-size: 13px;
+    }
+    .slider{
+        width: 360px;
+        height: 100px;
+    }
+    .copyright{
+        font-size: 10px;
+        margin-top: -500px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .backgroundimg{
+        background-image: url('../static/images/farm3.jpg');  
+        backdrop-filter: blur(100px); 
+        overflow-y: hidden; 
+        background-size: cover; 
+        height: 593px; 
+        margin: 0;
+    }
+    
+    
+    table{
+        margin-left: 300px;
+    }
+    .farmers{
+        border-color: white;
+        width: 150px; 
+        margin-left: 100px; 
+        height: 100px;
+    }
+    .dealers{
+        border-color: white;
+        width: 150px; 
+        margin-left: 100px; 
+        height: 100px;
+    }
+    .deals{
+        margin-top:50px;
+        margin-left: 355px ;
+        border-color: white; 
+        height: 150px;
+        width: 500px;
+    }
+    .msg{
+        font-size: 15px;
+    }
+    .slider{
+        height: 80px; 
+        width: 900px; 
+        margin-left: 150px;
+    }
+    .copyright{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        margin-left: 20px;
+    }
+}
+</style>
+</head>
+<body> -->
+ 
+<!--
+<div id="right-panel" class="right-panel">
+     
+    <div class="backgroundimg">
+    <div class="blacklayer" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h3 class="ekisan text-white" style="position: fixed; margin-left: 30px;padding-top: 30px;">E-KISAN</h3>
+        <a href="/index/"><button class="sell btn btn-outline-light rounded" style="position: fixed; padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px; margin-top: 30px;box-shadow: 0 0 50px #46eb96d7;">Sell</button></a>
+        <a href="/index/"><button class="signin btn btn-outline-light rounded" style="position: fixed; padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px; margin-top: 30px;box-shadow: 0 0 50px #46eb96d7;">Sign In</button></a>
+        <a href="/register/"><button class="signup btn btn-outline-light rounded"
+            style="position: fixed;padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px;margin-top: 30px;box-shadow: 0 0 50px #46eb96d7;">Sign
+            Up</button></a>
+    <br><br><br><br>
+    
+    <table >
+        <tr>
+            <th style="text-align: center;">
+                <div class="farmers bg-transparent card shadow-lg rounded p-4">
+                    <h4 class="h4 text-white">FARMERS</h4>
+                    <h4 class="text-white" style="margin-top: 10px;">{{farmers}}</h4>
+                </div>
+            </th>
+            <th style="text-align: center;">
+                <div class="dealers bg-transparent card shadow-lg rounded p-4">
+                    <h4 class="text-white">DEALERS</h4>
+                    <h4 class="text-white" style="margin-top: 10px;">{{dealers}}</h4>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+   
+
+    <div class="deals bg-transparent card">
+       
+        <div class="card-body text-white">
+            {% for latest_message in latest_messages %}
+            <p class="msg text-white">{{latest_message.user}} : {{latest_message.notification}}</p>
+            {% endfor %}
+        </div>
+    </div>
+<br><br><br><br>
+-->
+<!-- <div class="slider-container" style="margin-top: -30px;" >
+    <div class="slider">
+        {% for product_info in products_info %}
+        <div class="card bg-transparent" style="border-color: white;width: 150px;">
+            <div class="card-content">
+                <div class="card-title text-white" style="margin-top: -10px; font-size: 14px;">{{product_info.product_name}}</div>
+                <p class="text-white" style="margin-top: -5px; font-size: 12px;">Quantity:{{product_info.total_quantity}} kg</p>
+                <p class="text-white" style="margin-top: -20px; font-size: 12px;">Rate:{{product_info.total_rate}} Rs</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="slider-controls" style="margin-top: -250px;">
+        <button class="prev" onclick="prevSlide()" style="margin-left: 140px;">❮</button>
+        <button onclick="nextSlide()" style="margin-right: 220px;">❯</button>
+    </div>
+</div>
+
+<p class="copyright text-white">E-KISAN - @copyright-2022</p>
+</div>    
+</div>
+</div>
+<script>
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % document.querySelectorAll('.card').length;
+        updateSlider();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + document.querySelectorAll('.card').length) % document.querySelectorAll('.card').length;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const slider = document.querySelector('.slider');
+        const cardWidth = document.querySelector('.card').offsetWidth;
+        slider.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+    }
+</script>
+
+
+    <script src="{% static 'assets/js/lib/chart-js/Chart.bundle.js' %}"></script>
+    <script src="{% static 'assets/js/dashboard.js' %}"></script>
+    <script src="{% static 'assets/js/widgets.js' %}"></script>
+    <script src="{% static 'assets/js/lib/vector-map/jquery.vmap.js' %}"></script>
+    <script src="{% static 'assets/js/lib/vector-map/jquery.vmap.min.js' %}"></script>
+    <script src="{% static 'assets/js/lib/vector-map/jquery.vmap.sampledata.js' %}"></script>
+    <script src="{% static 'assets/js/lib/vector-map/country/jquery.vmap.world.js' %}"></script>
+    
+
+</body>
+</html>  -->
+
+
+
+
+
+<!-- {% load static %}
+<!doctype html>
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-KISAN</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<style>
+
+    .slider-container {
+        overflow: hidden;
+        width: 100vw;
+        position: relative;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slider-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .slider-controls button {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+   
+</style> 
+
+</head>
+<body style="background-color: rgb(219, 244, 219)">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2b3a24;">
+        <a class="navbar-brand" href="#" style="color: white;">EKISAN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="/index/">Krishi Kendre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index/" style="color: white;">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register/" style="color: white;">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-2">
+        <h5>Our Latest Farmers</h5>
+                   <div class="row">
+                        {% for farmer in farmers %}
+                        <div class="col-sm-2">
+                            <div class="card" style="height: 200px;">
+                                <div class="card-body">
+                                    {% if farmer.profilepic %}
+                                    <img class="card-img-top" src="/media/{{ farmer.profilepic }}" alt="{{ farmer.name }}" style="height: 100px;">
+                                    {% else %}
+                                    <img class="card-img-top" src="{% static 'images/profile-picture.webp' %}" alt="Default Profile Picture" style="height: 100px;">
+                                    {% endif %}
+                                </div>
+                                <div class="card-footer bg-success" style="height: 70px;">
+                                    <h6 class="text-white">{{ farmer.name }}</h6>
+                                    <p style="font-size: small;" class="text-white">{{ farmer.city }}</p>
+                                </div>
+                            </div>
+                            
+                        </div>                        
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h5>Our Latest Dealers</h5>
+                    <div class="row">
+                        {% for dealer in dealers %}
+                        <div class="col-sm-2">
+                            <div class="card" style="height: 200px;">
+                                <div class="card-body">
+                                    {% if dealer.profilepic %}
+                                    <img class="card-img-top" src="/media/{{ dealer.profilepic }}" alt="{{ dealer.name }}" style="height: 100px;">
+                                    {% else %}
+                                    <img class="card-img-top" src="{% static 'images/profile-picture.webp' %}" alt="Default Profile Picture" style="height: 100px;">
+                                    {% endif %}
+                                </div>
+                                <div class="card-footer bg-danger" style="height: 70px;">
+                                    <h6 class="text-white">{{ dealer.name }}</h6>
+                                    <p style="font-size: small;"  class="text-white">{{ dealer.city }}</p>
+                                </div>
+                            </div>
+                            
+                        </div>                        
+                        {% endfor %}
+                    </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h5>Latest Deals</h5>
+        <div class="row">
+             {% for latest_message in latest_messages %}
+                <div class="col-sm-4">
+                    <div class="card" style="background-color: #82d060;">
+                        <div class="card-body">
+                            <p class="msg text">{{ latest_message.user }} : {{ latest_message.notification }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h5>All Available Products</h5>
+        
+
+
+
+
+    <div class="slider-container" style="width: 1200px;margin-left: -50px;">
+    <div class="slider">
+    {% for product, info in product_crops_dict.items %}
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-body">
+                {% if info.crops %}
+                <img class="card-img-top" src="/media/{{ info.crops.0.image }}" alt="{{ crop_list.0.nameineng }}" style="height: 100px;">
+                {% else %}
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Dummy Image" style="height: 100px;">
+                {% endif %}
+            </div>
+            <div class="card-footer bg-info" style="height: 100px;">
+                <h4 class="card-title text-white" style="margin-top: -10px;">{{ info.product_info.product_name }}</h4>
+                <p class="card-text text-white" style="margin-top: -10px;">Rate: {{ info.product_info.total_rate }}Rs</p>
+                <p class="card-text text-white" style="margin-top: -10px;">Quantity: {{ info.product_info.total_quantity }}Kg</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+    </div>
+
+        <div class="slider-controls" style="margin-top: -200px;">
+            <button class="prev" onclick="prevSlide()" style="margin-left: 10px;font-size: 60px;color:black">❮</button>
+            <button onclick="nextSlide()" style="margin-right: 20px;font-size: 60px;color:black">❯</button>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer mt-5" style="background-color: rgb(26, 39, 26);">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h4 class="text-white">EKISAN</h4>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white">Contact Us</h5><hr class="bg-light">
+                    <p class="text-white">Email: talhahamid.syed@gmail.com</p>
+                    <p class="text-white">Phone: +91 7738824939</p>
+                    <p class="text-white">Address: Akot Road near Lodi Garden ,Akola ,Maharashtra India</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white">Privacy Policy</h5><hr class="bg-light">
+                    <p class="text-white"><a href="#" class="text-white">Privacy Policy</a></p>
+                    <p class="text-white"><a href="#" class="text-white">Terms and Conditions</a></p>
+                    <p class="text-white"><a href="#" class="text-white">Cookie Policy</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white">Our Services</h5><hr class="bg-light">
+                    <p><a href="#" class="text-white">Farm Management</a></p>
+                    <p><a href="#" class="text-white">Crop Advisory</a></p>
+                    <p><a href="#" class="text-white">Market Linkage</a></p>
+                    <p><a href="#" class="text-white">Agri-Insurance</a></p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center"><hr class="bg-light">
+                    <p class="text-white">&copy; 2024 eKisan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let currentIndex = 0;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % document.querySelectorAll('.card').length;
+        updateSlider();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + document.querySelectorAll('.card').length) % document.querySelectorAll('.card').length;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const slider = document.querySelector('.slider');
+        const cardWidth = document.querySelector('.card').offsetWidth;
+        slider.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+    }
+</script>
+
+</body>
+</html>  -->
+
+
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-KISAN for Kids</title>
+    <meta name="description" content="Kid-friendly E-KISAN platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #E0FFE0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .navbar {
+            background-color: #2b3a24;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-size: 1.2em;
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .card {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            text-align: center;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            width: 100vw;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-controls button {
+            background-color: transparent;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #2b3a24;
+            color: white;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .footer hr {
+            border-top: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">EKISAN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index/">
+                        Krishi Kendre
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index/">
+                         Sign In
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register/">
+                         Sign Up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Farmers Slider -->
+    <div class="container mt-3">
+        <h2 class="text-center">Our Latest Farmers</h2>
+        <div class="row">
+            {% for farmer in farmers %}
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="card text-center bg-success">
+                    <div class="card-body">
+                        {% if farmer.profilepic %}
+                        <img class="card-img-top" src="/media/{{ farmer.profilepic }}" alt="{{ farmer.name }}" style="height: 80px; width: 80px;">
+                        {% else %}
+                        <img class="card-img-top" src="{% static 'images/profile-picture.webp' %}" alt="Default Profile Picture" style="height: 80px; width: 80px;">
+                        {% endif %}
+                        <h5 class="card-title">{{ farmer.name }}</h5>
+                        <p class="card-text">{{ farmer.city }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Dealers Slider -->
+    <div class="container mt-3">
+        <h2 class="text-center">Our Latest Dealers</h2>
+        <div class="row">
+            {% for dealer in dealers %}
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="card text-center">
+                    <div class="card-body bg-danger">
+                        {% if dealer.profilepic %}
+                        <img class="card-img-top" src="/media/{{ dealer.profilepic }}" alt="{{ dealer.name }}" style="height: 80px; width: 80px;">
+                        {% else %}
+                        <img class="card-img-top" src="{% static 'images/profile-picture.webp' %}" alt="Default Profile Picture" style="height: 80px; width: 80px;">
+                        {% endif %}
+                        <h5 class="card-title">{{ dealer.name }}</h5>
+                        <p class="card-text">{{ dealer.city }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Latest Deals -->
+    <div class="container mt-3">
+        <h2 class="text-center">Latest Deals</h2>
+        <div class="row">
+            {% for latest_message in latest_messages %}
+            <div class="col-sm-6 col-md-4">
+                <div class="card text-center" style="background-color: #82d060;">
+                    <div class="card-body">
+                        <p class="msg">{{ latest_message.user }} : {{ latest_message.notification }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Available Products -->
+    <div class="slider-controls">
+    <div class="container mt-3">
+        <h2 class="text-center">All Available Products</h2>
+        <div class="slider-container" style="margin-left: -80px;width: 1200px;">
+            <div class="slider">
+                <button class="prev" onclick="prevSlide()">❮</button>
+                    {% for product, info in product_crops_dict.items %}
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                {% if info.crops %}
+                                <img class="card-img-top" src="/media/{{ info.crops.0.image }}" alt="{{ crop_list.0.nameineng }}" style="height: 80px; width: 80px;">
+                                {% else %}
+                                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Dummy Image" style="height: 80px; width: 80px;">
+                                {% endif %}
+                                <h5 class="card-title">{{ info.product_info.product_name }}</h5>
+                                <p class="card-text">Rate: {{ info.product_info.total_rate }} Rs</p>
+                                <p class="card-text">Quantity: {{ info.product_info.total_quantity }} Kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                <button class="next" onclick="nextSlide()" >❯</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+               
+                
+    
+
+    <!-- Footer -->
+        <footer class="footer mt-5" style="background-color: rgb(26, 39, 26);margin-top: 50px;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h4 class="text-white">EKISAN</h4>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white">Contact Us</h5><hr class="bg-light">
+                    <p class="text-white">Email: talhahamid.syed@gmail.com</p>
+                    <p class="text-white">Phone: +91 7738824939</p>
+                    <p class="text-white">Address: Akot Road near Lodi Garden ,Akola ,Maharashtra India</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white">Privacy Policy</h5><hr class="bg-light">
+                    <p class="text-white"><a href="#" class="text-white">Privacy Policy</a></p>
+                    <p class="text-white"><a href="#" class="text-white">Terms and Conditions</a></p>
+                    <p class="text-white"><a href="#" class="text-white">Cookie Policy</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white">Our Services</h5><hr class="bg-light">
+                    <p><a href="#" class="text-white">Farm Management</a></p>
+                    <p><a href="#" class="text-white">Crop Advisory</a></p>
+                    <p><a href="#" class="text-white">Market Linkage</a></p>
+                    <p><a href="#" class="text-white">Agri-Insurance</a></p>
+                </div>
+            </div>
+             
+
+
+        <div class="text-center p-3">
+            <p class="text-white mb-0">All Rights Reserved 2023 © eKisan.com</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        function showSlide(index) {
+            const slider = document.querySelector('.slider');
+            const slides = slider.children;
+            const totalSlides = slides.length;
+            index = (index + totalSlides) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            currentIndex = index;
+        }
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+        showSlide(0);
+    </script>
+</body>
+</html>

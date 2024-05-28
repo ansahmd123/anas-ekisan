@@ -1,0 +1,49 @@
+{% include 'menudealer.html' %}
+<head>
+<style>
+        .card {
+            height: 120px;
+            width: 200px;
+            margin-bottom: 50px;
+            margin-right: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+                margin-left: 60px;
+                margin-bottom: 20px;
+            }
+
+            .card:nth-child(odd) {
+                clear: both; 
+            }
+        }
+    </style>
+ </head>   
+<body style="background-color: LightGray;">    
+
+    {% include 'dealerheader.html' %}
+
+<br>
+
+
+<br>    
+<div class="container">
+    <div class="row">
+        {% for category in categories %}
+            <div class="col-md-3">
+                <a href="/dealer/crops/{{category.id}}/">
+                    <div class="card rounded shadow-lg" style="height: 120px;width: 200px; margin-right: 10px;background-color: light{{category.color}}">
+                        <h3 style="margin-left:25px;margin-top: 25px;">{{category.categoryineng}}</h3>
+                        <h4 style="margin-left:50px;margin-top: 5px;">{{category.categoryinhindi}} {{category.categoryinurdu}}</h4>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}    
+    </div>
+</div>
+{% include 'dealerfooter.html' %}
+
+
+
